@@ -1,0 +1,115 @@
+.accordion-description {
+  font-size: large;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 0 20px;
+  margin-top: 0;
+  color: white;
+}
+
+.accordion-description.open{ /* adjust based on content size */
+  opacity: 1;
+  margin-top: 20px;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+}
+.details{
+    margin-left: 20px;
+    font: 400 1.1rem "cairo";
+    color: gray;
+}
+.acc-container{
+    margin-bottom: 20px;
+}
+.accordion-title{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.accordion{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 30px;
+  }
+  
+.card{
+    border: solid 2px rgb(0, 100, 100);
+    width: 70px;
+    margin: 0 10px 0 10px;
+    height: 100%;
+    border-radius: 32px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    position: relative;
+    transition: flex-grow 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card:hover{
+    flex-grow: 2;
+    cursor: pointer;
+}
+.card.active{
+    flex-grow: 3.5;
+}
+.card > .background {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+    transition: var(--transition-timing) ease;
+}
+.card:hover > .background {
+    filter: brightness(1);
+}
+
+.accordion-content > .title{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    translate: 0 100%;
+    opacity: 0;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.accordion-content:hover{
+    translate: 0 0;
+    opacity: 1;
+}
+.card:hover .title{
+    translate: 0 0;
+    opacity: 1;
+}
+
+.card.active > .background {
+  filter: brightness(1);
+}
+@media only screen and (max-width: 800px){
+    .accordion{
+        flex-direction: column;
+        height: 100%; 
+        width: 100%; 
+    }
+    .card{
+        margin: 10px;
+        width: 95%;
+        height: 100px;
+    }
+    .accordion-content > .title{
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+}

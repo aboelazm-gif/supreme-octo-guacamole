@@ -1,0 +1,48 @@
+[
+    {
+        "pfp":"https://scontent.fcai19-9.fna.fbcdn.net/v/t39.30808-6/443916555_10169361904320571_5881645350222881629_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=KTIJNq4oEPkQ7kNvwEWNNz3&_nc_oc=AdmTOiDxf7wLcJ8n_ym0NHATYNQ7fyPXhaRL16kLC0N9KDpnVt7I0PY9owYmooBI06o&_nc_zt=23&_nc_ht=scontent.fcai19-9.fna&_nc_gid=yt7YnYN3wzXWEe9-QiFnig&oh=00_AfIPABTP6Y_gFJDCD9PpahpUiZPUY094MGy_jr-yVVJ6ag&oe=68290327",
+        "role":"Faculty Advisor",
+        "name":"Prof. Mohamed Abo Elazm"
+    },
+    {
+        "pfp":"/pfps/fayed.jpg",
+        "role":"Team Leader",
+        "name":"Fayed Mohamed"
+    },
+    {
+        "pfp":"/pfps/joe.png",
+        "role":"Sub-Team Head",
+        "sub":"Vehicle Dynamics",
+        "name":"Youssof Walid"
+    },
+    {
+        "pfp":"/pfps/kareem.png",
+        "role":"Sub-Team Head",
+        "sub":"Aerodynamics",
+        "name":"Kareem Abo Elazm"
+    },
+    {
+        "pfp":"/pfps/azad.jpg",
+        "role":"Sub-Team Head",
+        "sub":"Powertrain",
+        "name":"Azad Tamer"
+    },
+    {
+        "pfp":"/pfps/eman1.jpg",
+        "role":"Sub-Team Head",
+        "sub":"Electronics",
+        "name":"Eman Mohamed"
+    }, 
+    {
+        "pfp":"/pfps/andrew.jpg",
+        "role":"Sub-Team Head",
+        "sub":"Autonomous",
+        "name":"Andrew Ramez"
+    },
+    {
+        "pfp":"/pfps/sakr.png",
+        "role":"Sub-Team Head",
+        "sub":"Business",
+        "name":"AbdelRahman Sakr"
+    }
+]

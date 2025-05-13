@@ -1,0 +1,20 @@
+.chakra-modal__content-container{
+    z-index: 10;
+    position: fixed;
+    justify-content: center;
+    top: 35%;
+}
+.login-button{
+    background-color: transparent;
+    transition: background-color 0.3s linear;
+}
+.login-button:hover{
+    background-color: rgb(0,100,100);
+}
+.Q{
+    margin: 5px 0 0 15px;
+    font-size: 1.1rem;
+}
+.A{
+    margin: 0px 10px 15px 15px;
+}

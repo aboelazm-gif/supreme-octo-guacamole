@@ -1,0 +1,103 @@
+legend{
+    font: bolder 2rem 'cairo';
+}
+.Reg-Form {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgba(25,35,45,1);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Cairo';
+}
+
+.Reg-Form p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.Reg-Form label {
+  display: block;
+  margin-bottom: 6px;
+  font:bold 1.2rem 'Cairo';
+  color: rgb(0,225,200);
+}
+
+.Reg-Form input[type="text"],
+.Reg-Form input[type="email"],
+.Reg-Form select,
+.Reg-Form textarea {
+  color:rgb(0,100,100);
+  font:bold 1.1rem "Cairo";
+  width: 96%;
+  padding: 5px 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: rgba(200,225,225);
+  transition: border 0.3s;
+}
+.Reg-Form textarea{
+  border-radius: 10px;
+  height: 200px;
+}
+.Reg-Form select{
+    width: 100%;
+}
+
+.Reg-Form input:focus,
+.Reg-Form select:focus,
+.Reg-Form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.Reg-Form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.Reg-Form button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.subteam-1,
+.subteam-2,
+.subteam-3,
+.faculty,
+.major,
+.reg,
+.camp,
+.uni-info,
+.exp {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 800px) {
+  .Reg-Form p,
+  .reg,
+  .camp,
+  .faculty,
+  .major,
+  .uni-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .Reg-Form p label,
+  .Reg-Form p input {
+    width: 100%;
+  }
+}
