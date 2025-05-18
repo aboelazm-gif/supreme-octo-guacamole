@@ -1,0 +1,75 @@
+.heads-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.head-card{
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;     /* Center horizontally */
+    justify-content: center;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    transition: 0.5s ease-in-out;
+}
+.head-card img{
+    height: 120px;
+    border-radius: 100px;
+    margin: 0px;
+    margin-right: 0;
+    z-index: 2;
+    border: 3px solid rgb(0,150,150);
+    transition: 0.3s ease-in-out;
+}
+.head-info {
+    background-color: rgb(0,45,55);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    padding: 50px 5px 5px 5px;
+    border-radius: 25px;
+    border: 3px solid rgb(0,150,150);
+    transition: 0.3s ease-in-out;
+}
+.head-info h4{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.head-info h3{
+    margin: 10px;
+}
+.head-info-link{
+    text-decoration: none;
+}
+.head-info h5{
+    color: rgb(0,225,200);
+    font-size: 1.2rem;
+    display: none;
+    margin: 5px;
+    transition: color 0.3s ease-in-out;
+}
+.head-info h5:hover{
+    color:rgb(0,255,250);
+    transition: color 0.3s ease-in-out;
+}
+.head-card:hover{
+    height: 275px;
+    width: 275px;
+    transition: 0.3s ease-in-out;
+}
+.head-card:hover h5{
+    display: block;
+    transition: display 0.3s ease-in-out;
+}
+.head-card:hover img{
+    height: 140px;
+    transition: 0.3s ease-in-out;
+}
+.head-card:hover .head-info{
+    margin-top: -70px;
+    transition: 0.3s ease-in-out;
+}

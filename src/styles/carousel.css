@@ -1,0 +1,107 @@
+.carousel-container {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  display: flex;
+  background-color: rgba(14,15,15);
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(0, 100, 100);
+  border-top: 1px solid rgb(0, 100, 100);
+}
+.fade-container{
+  width: 65%;
+}
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* This will clip the fade inside */
+}
+  
+  .image-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(14, 15, 15, 0.4) 40%, rgba(14, 15, 15, 0.6) 60%, rgba(14, 15, 15, 0.8) 80%, rgba(14,15,15,1) 100%);
+    z-index: 2;
+  }
+  
+  .carousel-slide {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .carousel-image {
+    object-fit: cover;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0px 30px 30px 0px;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1;
+  }
+  
+  .fade {
+    animation: fadein 0.5s;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .carousel-caption {
+    text-align: left;
+    width: 35%;
+    height: 100%;
+    color: white;
+    padding: 15px;
+    padding-left: 30px;
+    margin-top: 0px;
+  }
+
+  .carousel-caption h3{
+    font: 900 2.5rem "Cairo";
+    line-height: 0.8;
+  }
+
+  .carousel-caption p{
+    font: 400 1.1rem "Cairo";
+    line-height: 1.25;
+    margin-right: 20px;
+  }
+  
+  .carousel-button {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    color: rgb(0, 100, 100);
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 0 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .carousel-button:hover {
+    background: rgba(69, 69, 69);
+    color: rgb(0, 225, 200);
+    transition: background-color 200ms linear, color 200ms linear;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .carousel-container{height: 50vh;}
+    .image-fade{background: -webkit-linear-gradient(top, rgba(14, 15, 15, 0.4) 40%, rgba(14, 15, 15, 0.6) 60%, rgba(14, 15, 15, 0.8) 80%, rgba(14,15,15,1) 100%);}
+    .carousel-slide{flex-direction: column;}
+    .fade-container{width: 100%; height: 65%; }
+    .carousel-image{border-radius: 0px; border-right: none;height: 100%; max-width: 100%; min-width: 100%;}
+    .carousel-caption{width: 100%; height: 35%;border-radius: 0px; padding: 0; margin-left: 0;}
+    .carousel-caption h3{margin-left: 20px;}
+    .carousel-caption p{display: none;}
+}
+  

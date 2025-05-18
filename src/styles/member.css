@@ -1,0 +1,60 @@
+/* Original Styles */
+.member-card {
+    background-color: rgb(0,45,55);
+    display: flex;
+    height: 150px;
+    width: 380px;
+    border-radius: 100px 32px 32px 100px;
+    position: relative;
+    font-family: 'cairo';
+    margin-bottom: 50px;
+}
+
+.member-card img {
+    height: 140px;
+    border-radius: 100px;
+    margin: 0px;
+    margin-right: 0;
+    z-index: 2;
+    border: 5px solid rgb(0,45,55);
+}
+
+.member-info {
+    width: 100%;
+    margin-left: -80px;
+    height: 100%;
+}
+
+.member-info h3 {
+    color: rgb(25,35,45);
+    background-color: rgb(0,150,150);
+    padding-left: 75px;
+    border-radius: 20px;
+    margin: 5px 5px 0 5px;
+    font-size: 1.25rem;
+    height: 40px;
+    z-index: 1;
+}
+
+.member-info h4 {
+    border-radius: 20px;
+    height: 84px;
+    margin-top: -40px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 3px solid rgb(0,150,150);
+    padding: 50px 0px 0 85px;
+    line-height: 1.3rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    z-index: 0;
+}
+
+/* Tree Structure Styles */
+.highboard-members {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}

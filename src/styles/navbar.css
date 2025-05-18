@@ -1,0 +1,89 @@
+nav{
+    display: flex;
+    background-color: rgb(25, 35, 45);
+    border-bottom: rgb(0, 100, 100) solid 1px; 
+    align-items: center;
+    height: 70px;
+
+}
+a{
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+.nav-list{
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-self: center;
+}
+.nav-list li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 65px;
+    text-align: center;
+}
+.nav-list li a{
+    font-size: 1em ;
+    text-decoration: none;
+    color: rgb(0, 225, 200);
+    will-change: filter;
+    transition: color 300ms, filter 300ms;
+}
+.nav-list li a:hover{
+    filter: drop-shadow(0 0 0.5em #a5d3ff);
+    color: rgb(150, 250, 255);
+}
+.team-logo{
+    display: flex;
+    border-radius: 0 50px 50px 0;
+    padding: 7px 35px 7px 7px;    
+    transition: background-color 100ms linear;
+}
+.team-logo:hover{
+    background-color: rgba(0, 105, 120, 0.75);
+}
+.account-buttons{
+    display: flex;
+}
+.account-buttons p{
+    margin-right: 20px;
+    color: rgb(0, 225, 200);
+    font: bold 1.2em "Cairo";
+}
+.signup-button{
+
+    height: 45px;
+    padding: 5px 20px;
+    font: bold 1.2em "Cairo";
+    background-color: rgb(0, 225, 200);
+    color: rgb(25, 35, 45);
+    border: 0;
+    border-radius: 30px;
+    transition: color 0.3s linear, background-color 0.3s linear;
+}
+.signup-button:hover{
+    color:rgb(0, 225, 200);
+    background-color: rgb(0, 100, 100);
+}
+
+.pfp{
+    padding-right: 5px;
+    color: #000;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.pfp:hover{
+    filter: drop-shadow(0 0 0.5em #a5d3ff);
+}
+@media only screen and (max-width: 900px){
+    .nav-list{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
